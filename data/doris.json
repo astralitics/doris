@@ -115,10 +115,10 @@
     "location": "Santiago, Chile"
   },
   "seller": {
-    "name": "",
-    "whatsapp_e164": "",
-    "whatsapp_display": "",
-    "email": "",
+    "name": "Juan",
+    "whatsapp_e164": "+56 9 4984 6340",
+    "whatsapp_display": "+56 9 4984 6340",
+    "email": "vallesgamez@gmail.com",
     "prefilled_message": "Hi, I'm interested in Doris!"
   },
   "story": {
