@@ -1,0 +1,601 @@
+{
+  "vehicle": {
+    "name": "Doris",
+    "year": 2019,
+    "make": "Citroën",
+    "model": "Jumper H2L2",
+    "type": "Converted Motorhome",
+    "price": {
+      "amount": 38000000,
+      "currency": "CLP"
+    },
+    "engine": "2.0L Diesel · 4 cylinders · Front-wheel drive",
+    "transmission": "Manual",
+    "fuel": "Diesel",
+    "gvw": "3,500 kg",
+    "sleeping_capacity": 2,
+    "mileage": "112,000 km",
+    "registration_country": "Chile — circulation permit + SOAP paid until 2027; GPS tracking active until May 2027",
+    "color": "White",
+    "glance_fields": {
+      "year": {
+        "show": true,
+        "label_en": "Year",
+        "label_es": "Año"
+      },
+      "engine": {
+        "show": true,
+        "label_en": "Engine",
+        "label_es": "Motor"
+      },
+      "mileage": {
+        "show": true,
+        "label_en": "Mileage",
+        "label_es": "Kilometraje"
+      },
+      "transmission": {
+        "show": true,
+        "label_en": "Transmission",
+        "label_es": "Transmisión"
+      },
+      "fuel": {
+        "show": true,
+        "label_en": "Fuel",
+        "label_es": "Combustible"
+      },
+      "gvw": {
+        "show": false,
+        "label_en": "GVW",
+        "label_es": "PBV"
+      },
+      "sleeping_capacity": {
+        "show": true,
+        "label_en": "Sleeps",
+        "label_es": "Capacidad",
+        "value_en": "Sleeps 2 (double bed from convertible benches)",
+        "value_es": "2 (cama doble convertible desde bancas)"
+      },
+      "registration_country": {
+        "show": true,
+        "label_en": "Registration",
+        "label_es": "Registro"
+      },
+      "color": {
+        "show": false,
+        "label_en": "Color",
+        "label_es": "Color"
+      },
+      "dimensions": {
+        "show": true,
+        "label_en": "Dimensions",
+        "label_es": "Dimensiones"
+      },
+      "drivetrain": {
+        "show": true,
+        "label_en": "Drivetrain",
+        "label_es": "Tracción",
+        "value_en": "Front-wheel drive",
+        "value_es": "Tracción delantera"
+      },
+      "vehicle_features": {
+        "show": true,
+        "label_en": "Cab Features",
+        "label_es": "Equipamiento Cabina",
+        "value_en": "A/C · Bluetooth · Electric windows & mirrors · Reverse sensors",
+        "value_es": "A/C · Bluetooth · Vidrios y espejos eléctricos · Sensores de retroceso"
+      },
+      "servicing": {
+        "show": true,
+        "label_en": "Servicing",
+        "label_es": "Mantenciones",
+        "value_en": "Rigorous dealer service every 10,000 km — complete preventive & corrective history",
+        "value_es": "Mantenciones rigurosas cada 10.000 km en la marca — historial preventivo y correctivo completo"
+      },
+      "gps": {
+        "show": true,
+        "label_en": "GPS Tracking",
+        "label_es": "GPS",
+        "value_en": "Online tracking active until May 2027",
+        "value_es": "Seguimiento en línea activo hasta mayo 2027"
+      },
+      "circulation_permit": {
+        "show": true,
+        "label_en": "Permit & SOAP",
+        "label_es": "Permiso & SOAP",
+        "value_en": "Paid until 2027",
+        "value_es": "Pagados hasta 2027"
+      }
+    },
+    "dimensions": "Length: 5.41m · Width: 2.05m · Height: 2.52m (H2L2 body)",
+    "accident_history": "No accidents — complete preventive and corrective service history available",
+    "vehicle_features_list": "A/C · Bluetooth · Electric windows and mirrors · Reverse sensors",
+    "servicing_policy": "Rigorous servicing every 10,000 km at the Citroën brand dealership",
+    "gps_tracking": "Online GPS tracking active until May 2027",
+    "circulation_permit": "Circulation permit + SOAP paid until 2027",
+    "location": "Santiago, Chile"
+  },
+  "story": {
+    "en": "Doris is a brand-new motorhome conversion, built on a 2019 Citroën Jumper H2L2 and located in Santiago, Chile. The build was approached as a premium finish from the ground up — natural tongue-and-groove wood ceiling, vinyl porcelain-style flooring, MDF cabinetry with gold hardware, a full marble-finish shower cabin with 100% gold fittings, and a generous electrical system built around Victron and Epever components with a LiFePO4 battery bank.\n\nThe van has 112,000 km with a complete preventive and corrective service history — every 10,000 km at the Citroën dealership — and all documentation in order. Circulation permit and SOAP are paid through 2027, and active online GPS tracking is included until May 2027.\n\nDoris was built to be a comfortable home on wheels: two grey upholstered benches convert into a double bed with terracotta cushions, a 65L Alpicool fridge keeps groceries cold off-grid, and a 130L fresh-water system with a Shurflo pump handles the kitchen and bathroom. Ready to hand over the keys to the next owner.",
+    "es": "Doris es una motorhome completamente nueva, construida sobre un Citroën Jumper H2L2 2019 y ubicada en Santiago de Chile. El proyecto se abordó como una terminación premium desde el inicio — techo machihembrado de madera natural, piso vinílico tipo porcelanato, muebles MDF con tiradores dorados, una cabina de ducha revestida en mármol con grifería 100% dorada, y un sistema eléctrico robusto basado en componentes Victron y Epever con banco de baterías LiFePO4.\n\nLa van tiene 112.000 km con historial preventivo y correctivo completo — mantenciones rigurosas cada 10.000 km en la marca Citroën — y toda la documentación al día. El permiso de circulación y SOAP están pagados hasta 2027, y se incluye GPS con seguimiento en línea activo hasta mayo 2027.\n\nDoris fue construida para ser un hogar cómodo sobre ruedas: dos bancas tapizadas en gris se convierten en cama doble con cojines terracota, una nevera Alpicool de 65L mantiene los alimentos fríos en autonomía, y un sistema de agua limpia de 130L con bomba Shurflo abastece cocina y baño. Lista para entregar las llaves al próximo dueño."
+  },
+  "camperization": {
+    "description_en": "Doris was professionally built as a brand-new motorhome conversion in Santiago, Chile, with a premium interior finish. Every element — from the tongue-and-groove natural wood ceiling to the 100% gold bathroom fittings and marble-finish shower cabin — was chosen for durability and aesthetics. The layout is designed around a flexible living space that converts into a double bed, with a full bathroom (shower + chemical toilet), a 65L built-in fridge, and a robust 12V off-grid electrical system.",
+    "description_es": "Doris fue construida profesionalmente como una motorhome completamente nueva en Santiago de Chile, con terminación interior premium. Cada elemento — desde el techo machihembrado de madera natural hasta la grifería 100% dorada del baño y la cabina de ducha con revestimiento de mármol — fue elegido por durabilidad y estética. La distribución está pensada en torno a un living flexible que se convierte en cama doble, con baño completo (ducha + baño químico), nevera empotrada de 65L, y un sistema eléctrico 12V robusto para autonomía.",
+    "features": [
+      {
+        "en": "Two grey upholstered benches that convert into a double bed, with terracotta cushions",
+        "es": "2 bancas tapizadas en gris convertibles en cama doble, con cojines terracota",
+        "show_in_glance": true
+      },
+      {
+        "en": "Natural tongue-and-groove wood ceiling with white profile trim",
+        "es": "Techo machihembrado de madera natural con perfiles blancos",
+        "show_in_glance": true
+      },
+      {
+        "en": "40×60 cm acrylic camper skylight with overhead light",
+        "es": "Claraboya acrílica de camper 40×60 cm con luz cenital",
+        "show_in_glance": false
+      },
+      {
+        "en": "100×50 cm acrylic side camper window",
+        "es": "Ventana lateral acrílica de camper 100×50 cm",
+        "show_in_glance": false
+      },
+      {
+        "en": "12V Mushroom roof extractor fan with cross-ventilation",
+        "es": "Extractor de techo 12V Mushroom con ventilación cruzada",
+        "show_in_glance": false
+      },
+      {
+        "en": "Illuminated upper shelf with warm LED lighting and decorative plants",
+        "es": "Estante superior iluminado con LED cálido y plantas decorativas",
+        "show_in_glance": false
+      },
+      {
+        "en": "Oval mirror with gold frame",
+        "es": "Espejo ovalado con marco dorado",
+        "show_in_glance": false
+      },
+      {
+        "en": "Alpicool CR65 fridge (65L), built-in",
+        "es": "Nevera Alpicool CR65 (65L), empotrada",
+        "show_in_glance": true
+      },
+      {
+        "en": "Light porcelain-style vinyl laminate flooring",
+        "es": "Piso vinílico laminado tipo porcelanato claro",
+        "show_in_glance": false
+      },
+      {
+        "en": "MDF furniture with gold handles and storage drawers",
+        "es": "Muebles MDF con tiradores dorados y cajones de almacenamiento",
+        "show_in_glance": false
+      },
+      {
+        "en": "Includes accessories shown in the photos",
+        "es": "Incluye accesorios mostrados en las fotos",
+        "show_in_glance": false
+      }
+    ]
+  },
+  "electrical_12v": {
+    "components": [
+      {
+        "name": "Leisure Battery",
+        "brand": "NIMAC",
+        "model": "LiFePO4",
+        "specs": "12.8V · 150Ah",
+        "notes": "Lithium iron phosphate",
+        "show_in_glance": true,
+        "glance_label_en": "Battery",
+        "glance_label_es": "Batería",
+        "glance_value_en": "NIMAC LiFePO4 12.8V · 150Ah",
+        "glance_value_es": "NIMAC LiFePO4 12.8V · 150Ah"
+      },
+      {
+        "name": "Solar Panel",
+        "brand": "DAH Solar",
+        "model": "",
+        "specs": "460W Monocrystalline",
+        "notes": "Roof mounted",
+        "show_in_glance": true,
+        "glance_label_en": "Solar",
+        "glance_label_es": "Solar",
+        "glance_value_en": "DAH Solar 460W Monocrystalline",
+        "glance_value_es": "DAH Solar 460W Monocristalino"
+      },
+      {
+        "name": "Solar Charge Controller",
+        "brand": "Epever",
+        "model": "XTRA 4210N",
+        "specs": "MPPT 40A",
+        "notes": ""
+      },
+      {
+        "name": "Communication Monitor",
+        "brand": "Epever",
+        "model": "MT52",
+        "specs": "Replicator / remote display",
+        "notes": "Shows charge controller status",
+        "show_in_glance": false
+      },
+      {
+        "name": "Inverter",
+        "brand": "Victron",
+        "model": "Phoenix 12/1200",
+        "specs": "12V → 230V · 1200VA",
+        "notes": "",
+        "show_in_glance": true,
+        "glance_label_en": "Inverter",
+        "glance_label_es": "Inversor",
+        "glance_value_en": "Victron Phoenix 12/1200",
+        "glance_value_es": "Victron Phoenix 12/1200"
+      },
+      {
+        "name": "Master Disconnect",
+        "brand": "",
+        "model": "",
+        "specs": "275A switch",
+        "notes": "With positive and negative busbars"
+      },
+      {
+        "name": "MEGA Fuses",
+        "brand": "",
+        "model": "",
+        "specs": "125A · 40A · 125A",
+        "notes": ""
+      },
+      {
+        "name": "Resettable Thermal Breaker",
+        "brand": "",
+        "model": "",
+        "specs": "60A",
+        "notes": ""
+      },
+      {
+        "name": "DC Fuse Box",
+        "brand": "",
+        "model": "",
+        "specs": "12V distribution",
+        "notes": ""
+      },
+      {
+        "name": "Circuit Breakers",
+        "brand": "",
+        "model": "",
+        "specs": "25A differential · 10A thermal",
+        "notes": ""
+      },
+      {
+        "name": "Wiring",
+        "brand": "",
+        "model": "",
+        "specs": "35mm² power · 16mm² ground · 10mm² charge controller · 2.5mm² outlets",
+        "notes": ""
+      }
+    ],
+    "diagram_description": "12V electrical system: DAH Solar 460W panel → Epever XTRA 4210N MPPT → NIMAC LiFePO4 150Ah battery bank. 275A master disconnect with busbars feeds the DC fuse box (12V loads) and the Victron Phoenix 12/1200 inverter for AC. MEGA fuses (125/40/125A) and a 60A resettable thermal breaker protect the main circuits. Wiring sized per circuit: 35mm² power, 16mm² ground, 10mm² controller, 2.5mm² outlets.",
+    "diagram_image_path": "/images/diagrams/12v-electrical.png",
+    "freetext_notes": "The 12V system was built around premium components (Victron, Epever, NIMAC LiFePO4) with generous wire gauges and individually protected circuits. The MT52 monitor replicates the charge controller status for easy reading from inside the living area."
+  },
+  "electrical_230v": {
+    "components": [
+      {
+        "name": "Inverter",
+        "brand": "Victron",
+        "model": "Phoenix 12/1200",
+        "specs": "1200VA continuous · pure sine wave",
+        "notes": "Provides 230V AC from the 12V LiFePO4 battery bank",
+        "show_in_glance": true,
+        "glance_label_en": "Inverter",
+        "glance_label_es": "Inversor"
+      }
+    ],
+    "diagram_description": "230V AC is generated off-grid by the Victron Phoenix 12/1200 inverter from the 12V LiFePO4 battery bank. AC outlets in the living area are powered from the inverter.",
+    "diagram_image_path": "/images/diagrams/230v-electrical.png",
+    "freetext_notes": "The inverter provides 230V AC for small household appliances when off-grid. No shore power hookup is documented in the owner's specification."
+  },
+  "plumbing": {
+    "components": [
+      {
+        "name": "Fresh Water Tanks",
+        "brand": "",
+        "model": "",
+        "specs": "2 × 65L = 130L total",
+        "notes": "",
+        "show_in_glance": true,
+        "glance_label_en": "Fresh Water",
+        "glance_label_es": "Agua Limpia",
+        "glance_value_en": "130L total (2 × 65L)",
+        "glance_value_es": "130L total (2 × 65L)"
+      },
+      {
+        "name": "Grey Water Tank",
+        "brand": "",
+        "model": "",
+        "specs": "40L",
+        "notes": "With guillotine valve",
+        "show_in_glance": true,
+        "glance_label_en": "Grey Water",
+        "glance_label_es": "Aguas Grises",
+        "glance_value_en": "40L with guillotine valve",
+        "glance_value_es": "40L con válvula de guillotina"
+      },
+      {
+        "name": "Water Pump",
+        "brand": "Shurflo",
+        "model": "",
+        "specs": "12V · 55 PSI · 11.3 LPM · 7.5A",
+        "notes": ""
+      },
+      {
+        "name": "Pressure Accumulator",
+        "brand": "",
+        "model": "",
+        "specs": "0.75L pressurized",
+        "notes": "Stabilizes water pressure"
+      },
+      {
+        "name": "Kitchen Faucet",
+        "brand": "",
+        "model": "",
+        "specs": "Single-lever gooseneck",
+        "notes": "Gold finish"
+      },
+      {
+        "name": "Bathroom Faucet",
+        "brand": "",
+        "model": "",
+        "specs": "Single-lever",
+        "notes": "Gold finish"
+      },
+      {
+        "name": "Shower Receptacle",
+        "brand": "",
+        "model": "",
+        "specs": "70×70 cm",
+        "notes": "",
+        "show_in_glance": true,
+        "glance_label_en": "Shower",
+        "glance_label_es": "Ducha",
+        "glance_value_en": "70×70 cm receptacle",
+        "glance_value_es": "Receptáculo 70×70 cm"
+      }
+    ],
+    "diagram_description": "Plumbing: 2 × 65L fresh-water tanks (130L total) feed a Shurflo 12V pump (55 PSI · 11.3 LPM) with a 0.75L pressure accumulator. Lines run to the kitchen (gold gooseneck single-lever faucet) and bathroom (single-lever faucet + 70×70 shower receptacle). Waste drains to a 40L grey-water tank with guillotine valve.",
+    "diagram_image_path": "/images/diagrams/pluming-diagram.png",
+    "freetext_notes": "The pressurized pump and accumulator deliver consistent flow to the kitchen and shower. The grey-water guillotine valve lets you hold waste for proper disposal at a service station."
+  },
+  "bathroom": {
+    "description_en": "Full-walk-in shower cabin with a premium aesthetic throughout.",
+    "description_es": "Cabina de ducha completa con estética premium en cada detalle.",
+    "features": [
+      {
+        "en": "Shower cabin clad in white marble finish with gold and terracotta veining",
+        "es": "Cabina de ducha con revestimiento mármol blanco veteado dorado y terracota"
+      },
+      {
+        "en": "100% gold fittings on shower, sink, and accessories",
+        "es": "Grifería 100% dorada en ducha, lavamanos y accesorios"
+      },
+      {
+        "en": "24L cassette chemical toilet",
+        "es": "Baño químico cassette 24L"
+      },
+      {
+        "en": "Natural treated wood deck floor",
+        "es": "Piso deck de madera natural tratada"
+      },
+      {
+        "en": "Integrated ceiling ventilation in the bathroom",
+        "es": "Ventilación integrada en cielo del baño"
+      },
+      {
+        "en": "Oval mirror with gold frame",
+        "es": "Espejo ovalado con marco dorado"
+      },
+      {
+        "en": "Gold-profile trim on edges and corners",
+        "es": "Terminaciones en perfil dorado en bordes y esquinas"
+      }
+    ]
+  },
+  "heating": {
+    "components": [
+      {
+        "name": "Roof Extractor Fan",
+        "brand": "",
+        "model": "Mushroom",
+        "specs": "12V",
+        "notes": "Cross-ventilation with side window",
+        "show_in_glance": true,
+        "glance_label_en": "Ventilation",
+        "glance_label_es": "Ventilación",
+        "glance_value_en": "12V Mushroom roof extractor · cross-ventilation",
+        "glance_value_es": "Extractor de techo 12V Mushroom · ventilación cruzada"
+      },
+      {
+        "name": "Bathroom Ceiling Vent",
+        "brand": "",
+        "model": "",
+        "specs": "Integrated",
+        "notes": "Built into bathroom ceiling"
+      },
+      {
+        "name": "Cab A/C",
+        "brand": "",
+        "model": "",
+        "specs": "Factory-fitted vehicle A/C",
+        "notes": "Cools the cab; does not condition the rear living area",
+        "show_in_glance": true,
+        "glance_label_en": "A/C",
+        "glance_label_es": "A/C",
+        "glance_value_en": "Factory cab A/C",
+        "glance_value_es": "A/C de fábrica en cabina"
+      }
+    ],
+    "diagram_description": "Ventilation: 12V Mushroom roof extractor pulls air out while the 100×50 cm side camper window and bathroom ceiling vent provide cross-flow. Factory cab A/C cools the front during driving.",
+    "diagram_image_path": "/images/diagrams/heating.png",
+    "freetext_notes": "The owner's specification lists ventilation and factory cab A/C — no standalone interior heater is documented. Contact the seller if you need confirmation on heating capability."
+  },
+  "included_equipment": {
+    "categories": [
+      {
+        "name_en": "Accessories shown in photos",
+        "name_es": "Accesorios mostrados en las fotos",
+        "items": [
+          {
+            "name_en": "Includes the accessories pictured in the listing photos",
+            "name_es": "Incluye los accesorios que aparecen en las fotos del aviso",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "service_history": {
+    "entries": [],
+    "freetext_notes": "Rigorous servicing every 10,000 km at the Citroën brand dealership. Complete preventive and corrective service history available — contact the seller for the detailed logbook."
+  },
+  "quirks_and_notes": {
+    "items": [
+      "Online GPS tracking active until May 2027.",
+      "Circulation permit and SOAP paid until 2027.",
+      "Brand-new conversion — contact the seller for any detail not listed in the specification."
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What year, make, and model is the van?",
+      "answer": "A 2019 Citroën Jumper H2L2, converted into a fully equipped motorhome."
+    },
+    {
+      "question": "What is the asking price?",
+      "answer": "CLP $38,000,000."
+    },
+    {
+      "question": "Where is the van located?",
+      "answer": "Santiago, Chile."
+    },
+    {
+      "question": "How many kilometers does it have?",
+      "answer": "112,000 km."
+    },
+    {
+      "question": "What engine does it have?",
+      "answer": "A 2.0L diesel, 4-cylinder, front-wheel drive."
+    },
+    {
+      "question": "How has it been serviced?",
+      "answer": "Rigorous dealer service every 10,000 km at the Citroën brand. Complete preventive and corrective service history is available."
+    },
+    {
+      "question": "Is it registered in Chile and up to date?",
+      "answer": "Yes. Circulation permit and SOAP are paid until 2027."
+    },
+    {
+      "question": "Does it have GPS?",
+      "answer": "Yes, online GPS tracking is active until May 2027."
+    },
+    {
+      "question": "What features does the cab have?",
+      "answer": "A/C, Bluetooth, electric windows and mirrors, and reverse sensors."
+    },
+    {
+      "question": "What solar panel does it have?",
+      "answer": "A DAH Solar 460W monocrystalline panel."
+    },
+    {
+      "question": "What charge controller?",
+      "answer": "An Epever XTRA 4210N MPPT 40A, with an MT52 remote communication monitor."
+    },
+    {
+      "question": "What is the house battery?",
+      "answer": "A NIMAC LiFePO4 12.8V · 150Ah battery."
+    },
+    {
+      "question": "Does it have an inverter?",
+      "answer": "Yes, a Victron Phoenix 12/1200 (12V to 230V, 1200VA) inverter."
+    },
+    {
+      "question": "How is the 12V system protected?",
+      "answer": "A 275A master disconnect with positive and negative busbars, MEGA fuses (125A · 40A · 125A), a resettable 60A thermal breaker, a 12V DC fuse box, and 25A differential / 10A thermal breakers. Wiring is sized by circuit: 35mm² power, 16mm² ground, 10mm² controller, 2.5mm² outlets."
+    },
+    {
+      "question": "How much fresh water does it carry?",
+      "answer": "130 liters total — two 65L fresh-water tanks."
+    },
+    {
+      "question": "What water pump does it have?",
+      "answer": "A Shurflo 12V pump: 55 PSI, 11.3 LPM, 7.5A, with a 0.75L pressurized accumulator."
+    },
+    {
+      "question": "How big is the grey-water tank?",
+      "answer": "40 liters, with a guillotine valve."
+    },
+    {
+      "question": "What is the bathroom like?",
+      "answer": "A walk-in shower cabin with a white-marble finish (gold and terracotta veining), 100% gold fittings on shower, sink, and accessories, a 24L cassette chemical toilet, a natural treated-wood deck floor, integrated ceiling ventilation, an oval gold-framed mirror, and gold-profile trim on edges and corners."
+    },
+    {
+      "question": "Does it have a fridge?",
+      "answer": "Yes, a built-in Alpicool CR65 (65L)."
+    },
+    {
+      "question": "How many people can sleep in it?",
+      "answer": "Two. Two grey upholstered benches convert into a double bed with terracotta cushions."
+    },
+    {
+      "question": "Does it have a kitchen sink?",
+      "answer": "Yes, with a gold single-lever gooseneck faucet."
+    },
+    {
+      "question": "Does it have a heater for the living area?",
+      "answer": "The owner's specification lists ventilation (12V Mushroom roof extractor, cross-ventilation, bathroom ceiling vent) and factory cab A/C. A standalone interior heater is not documented — contact the seller to confirm."
+    },
+    {
+      "question": "What ventilation does it have?",
+      "answer": "A 12V Mushroom roof extractor with cross-ventilation via the side window, plus integrated ceiling ventilation in the bathroom."
+    },
+    {
+      "question": "What are the interior finishes like?",
+      "answer": "A tongue-and-groove natural-wood ceiling with white profile trim, light porcelain-style vinyl laminate flooring, MDF furniture with gold handles and storage drawers, and an illuminated upper shelf with warm LED lighting."
+    },
+    {
+      "question": "Does it have windows and a skylight?",
+      "answer": "Yes — a 40×60 cm acrylic camper skylight with overhead light, and a 100×50 cm acrylic side camper window."
+    },
+    {
+      "question": "What accessories are included?",
+      "answer": "The accessories shown in the listing photos are included."
+    },
+    {
+      "question": "Can I schedule a viewing?",
+      "answer": "Yes, contact the seller via WhatsApp or email to schedule a viewing in Santiago."
+    }
+  ],
+  "chatbot_config": {
+    "model": "claude-haiku-4-5-20251001",
+    "max_tokens": 512,
+    "prompt_template": "You are the AI assistant for \"Doris\", a 2019 Citroën Jumper H2L2 converted motorhome currently for sale in Santiago, Chile. You are embedded on the vehicle's listing website.\n\nYour role:\n- Answer questions about Doris's technical systems, specifications, service history, and features\n- Be friendly but direct — give the factual answer and stop. Do NOT editorialize, justify, soften, or spin.\n- Respond in the same language the user writes to you (English or Spanish)\n- If you don't know something or the data says \"TBD\" or \"placeholder\", say honestly that this detail hasn't been documented yet and suggest the buyer contact the seller\n- Never speculate about things not in the documentation\n- Never negotiate on price — direct pricing questions to the contact section\n- For personal questions about the seller, direct them to the contact section\n\nThe asking price is CLP $38,000,000 (Chilean Pesos).\n\nHere is the complete vehicle documentation:\n\n{{VEHICLE_DATA}}\n\nTone & length rules:\n- Answer the question that was asked — nothing more. If someone asks about accidents, state the documented accident history. Do NOT add context, silver linings, or reassuring commentary.\n- Never \"sell\" the van. No phrases like \"that's great considering...\", \"which shows...\", \"this means...\", \"the good news is...\". Just state the facts.\n- Be warm and approachable, not robotic — but keep answers tight. Think: knowledgeable friend, not salesperson.\n- 1–3 sentences for simple questions. Use bullet points only when listing multiple items.\n\nResponse format:\n- Your responses are rendered in a chat widget that supports markdown\n- You can use **bold**, bullet points (- or *), numbered lists, and short headers (##) when they help organize information (e.g. listing specs, features, or steps)\n- Keep responses concise — use formatting to improve clarity, not to pad length\n\nSTRICT RULE — zero hallucination:\n- You may ONLY state facts that appear verbatim or can be directly derived from the vehicle documentation above\n- Do NOT add details about locations, mounting positions, materials, installation methods, or any physical descriptions unless the documentation explicitly states them\n- Do NOT fill in gaps with general knowledge about vans, Citroën Jumpers, motorhomes, or common RV setups — you know NOTHING beyond what the documentation says\n- For example: if the documentation says \"100L fresh water tank\" but does NOT say where it is mounted, you must NOT say \"mounted under the floor\" or guess any location\n- When the documentation is silent on a detail, say exactly: \"That specific detail isn't in the documentation — I'd suggest contacting the seller directly.\"\n- Before including ANY claim in your response, mentally verify: \"Can I point to the exact line in the documentation that says this?\" If not, do not include it",
+    "version_history": [
+      {
+        "version": 1,
+        "date": "2026-03-09",
+        "notes": "Initial prompt — zero-hallucination rules, bilingual support, price handling"
+      },
+      {
+        "version": 2,
+        "date": "2026-03-09",
+        "notes": "Added tone rules — no selling, no editorializing, direct factual answers, warm but concise"
+      },
+      {
+        "version": 3,
+        "date": "2026-04-16",
+        "notes": "Updated for Doris — 2019 Citroën Jumper H2L2, Santiago, CLP $38M"
+      }
+    ],
+    "current_version": 3
+  }
+}

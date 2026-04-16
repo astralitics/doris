@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "story": "La Historia",
+    "specs": "Resumen",
+    "systems": "Sistemas",
+    "gallery": "Galería",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "tagline": "2019 Citroën Jumper H2L2 · Motorhome Convertida",
+    "price": "CLP $38.000.000",
+    "see_price": "Ver Precio",
+    "cta_explore": "Explorar la Van",
+    "cta_contact": "Contactar al Vendedor"
+  },
+  "story": {
+    "title": "La Historia",
+    "subtitle": "Un Año por Sudamérica"
+  },
+  "glance": {
+    "title": "Resumen",
+    "subtitle": "Todo lo que necesitas saber, organizado por categoría"
+  },
+  "systems": {
+    "title": "Documentación de Sistemas",
+    "subtitle": "Todo lo que necesitas saber sobre cómo funciona Doris, documentado en detalle.",
+    "tab_12v": "Eléctrico 12V",
+    "tab_230v": "Red 230V",
+    "tab_plumbing": "Plomería",
+    "tab_heating": "Calefacción",
+    "tab_camperization": "Camperización",
+    "tab_service": "Motor y Servicio",
+    "table_component": "Componente",
+    "table_brand": "Marca/Modelo",
+    "table_specs": "Especificaciones",
+    "table_notes": "Notas",
+    "notes_title": "Notas",
+    "diagram_title": "Diagrama del Sistema",
+    "diagram_coming_soon": "Diagrama próximamente — agregar imagen en",
+    "service_date": "Fecha",
+    "service_mileage": "Kilometraje",
+    "service_description": "Descripción",
+    "service_provider": "Proveedor"
+  },
+  "contact": {
+    "title": "¿Listo para tu Próxima Aventura?",
+    "subtitle": "Contáctanos para saber más sobre Doris o agendar una visita.",
+    "whatsapp": "Mensaje por WhatsApp",
+    "email": "Enviar un Email",
+    "location": "Actualmente ubicada en Chile"
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Conoce Doris por dentro y por fuera",
+    "all": "Todas",
+    "interior": "Interior",
+    "exterior": "Exterior",
+    "adventures": "Aventuras"
+  },
+  "chat": {
+    "title": "Soy el asistente de IA de Doris. ¡Pregunta lo que quieras!",
+    "placeholder": "Pregunta lo que quieras sobre la van...",
+    "send": "Enviar",
+    "greeting": "Soy el asistente de IA de Doris. ¡Pregunta lo que quieras!",
+    "error": "Lo siento, algo salió mal. Por favor intenta de nuevo.",
+    "close": "Cerrar",
+    "q1": "¿Qué sistema solar tiene?",
+    "q2": "Cuéntame sobre el sistema eléctrico",
+    "q3": "¿Cómo funciona la calefacción?",
+    "q4": "¿Cuál es la capacidad de agua?"
+  },
+  "modal": {
+    "title": "Contactar al Vendedor",
+    "subtitle": "Comunícate por WhatsApp o email para hacer preguntas o agendar una visita.",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "close": "Cerrar"
+  }
+}

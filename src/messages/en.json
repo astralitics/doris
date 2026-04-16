@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "story": "The Story",
+    "specs": "At a Glance",
+    "systems": "Systems",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "2019 Citroën Jumper H2L2 · Converted Motorhome",
+    "price": "CLP $38,000,000",
+    "see_price": "See Price",
+    "cta_explore": "Explore the Van",
+    "cta_contact": "Contact Seller"
+  },
+  "story": {
+    "title": "The Story",
+    "subtitle": "A Year Across South America"
+  },
+  "glance": {
+    "title": "At a Glance",
+    "subtitle": "Everything you need to know, organized by category"
+  },
+  "systems": {
+    "title": "Systems Documentation",
+    "subtitle": "Everything you need to know about how Doris works, documented in detail.",
+    "tab_12v": "12V Electrical",
+    "tab_230v": "230V Mains",
+    "tab_plumbing": "Plumbing",
+    "tab_heating": "Heating",
+    "tab_camperization": "Camperization",
+    "tab_service": "Engine & Service",
+    "table_component": "Component",
+    "table_brand": "Brand/Model",
+    "table_specs": "Specs",
+    "table_notes": "Notes",
+    "notes_title": "Notes",
+    "diagram_title": "System Diagram",
+    "diagram_coming_soon": "Diagram coming soon — add image at",
+    "service_date": "Date",
+    "service_mileage": "Mileage",
+    "service_description": "Description",
+    "service_provider": "Provider"
+  },
+  "contact": {
+    "title": "Ready for Your Next Adventure?",
+    "subtitle": "Get in touch to learn more about Doris or schedule a viewing.",
+    "whatsapp": "Message on WhatsApp",
+    "email": "Send an Email",
+    "location": "Currently located in Chile"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "See Doris inside and out",
+    "all": "All",
+    "interior": "Interior",
+    "exterior": "Exterior",
+    "adventures": "Adventures"
+  },
+  "chat": {
+    "title": "I'm Doris's AI assistant. Ask anything about it!",
+    "placeholder": "Ask anything about the van...",
+    "send": "Send",
+    "greeting": "I'm Doris's AI assistant. Ask anything about it!",
+    "error": "Sorry, something went wrong. Please try again.",
+    "close": "Close",
+    "q1": "What solar setup do you have?",
+    "q2": "Tell me about the electrical system",
+    "q3": "How does the heating work?",
+    "q4": "What's the water capacity?"
+  },
+  "modal": {
+    "title": "Contact the Seller",
+    "subtitle": "Reach out via WhatsApp or email to ask questions or schedule a viewing.",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "close": "Close"
+  }
+}
