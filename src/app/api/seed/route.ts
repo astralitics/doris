@@ -23,6 +23,7 @@ export async function POST() {
       addRandomSuffix: false,
       allowOverwrite: true,
       contentType: "application/json",
+      cacheControlMaxAge: 0,
     });
 
     return NextResponse.json({ success: true, message: "Blob seeded from local doris.json" });
