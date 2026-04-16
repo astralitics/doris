@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { getVehicleData, putVehicleData } from "@/lib/data";
 
 export const dynamic = "force-dynamic";
@@ -44,6 +45,11 @@ export async function POST(request: Request) {
     }
 
     await putVehicleData(body);
+
+    // Invalidate the public pages so the next request refetches the blob
+    // instead of serving a CDN-cached HTML snapshot from before this save.
+    revalidatePath("/", "layout");
+
     return NextResponse.json({ success: true });
   } catch (error: unknown) {
     console.error("Admin PUT error:", error);
