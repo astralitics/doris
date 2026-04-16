@@ -21,6 +21,7 @@ export async function POST() {
     await put(BLOB_NAME, JSON.stringify(data, null, 2), {
       access: "public",
       addRandomSuffix: false,
+      allowOverwrite: true,
       contentType: "application/json",
     });
 

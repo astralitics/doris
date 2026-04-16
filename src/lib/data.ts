@@ -30,6 +30,7 @@ export async function getVehicleData(): Promise<any> {
   await put(BLOB_NAME, JSON.stringify(data, null, 2), {
     access: "public",
     addRandomSuffix: false,
+    allowOverwrite: true,
     contentType: "application/json",
   });
   return data;
@@ -45,6 +46,7 @@ export async function putVehicleData(data: any): Promise<void> {
   await put(BLOB_NAME, JSON.stringify(data, null, 2), {
     access: "public",
     addRandomSuffix: false,
+    allowOverwrite: true,
     contentType: "application/json",
   });
 }
