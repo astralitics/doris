@@ -114,6 +114,13 @@
     "circulation_permit": "Circulation permit + SOAP paid until 2027",
     "location": "Santiago, Chile"
   },
+  "seller": {
+    "name": "",
+    "whatsapp_e164": "",
+    "whatsapp_display": "",
+    "email": "",
+    "prefilled_message": "Hi, I'm interested in Doris!"
+  },
   "story": {
     "en": "Doris is a brand-new motorhome conversion, built on a 2019 Citroën Jumper H2L2 and located in Santiago, Chile. The build was approached as a premium finish from the ground up — natural tongue-and-groove wood ceiling, vinyl porcelain-style flooring, MDF cabinetry with gold hardware, a full marble-finish shower cabin with 100% gold fittings, and a generous electrical system built around Victron and Epever components with a LiFePO4 battery bank.\n\nThe van has 112,000 km with a complete preventive and corrective service history — every 10,000 km at the Citroën dealership — and all documentation in order. Circulation permit and SOAP are paid through 2027, and active online GPS tracking is included until May 2027.\n\nDoris was built to be a comfortable home on wheels: two grey upholstered benches convert into a double bed with terracotta cushions, a 65L Alpicool fridge keeps groceries cold off-grid, and a 130L fresh-water system with a Shurflo pump handles the kitchen and bathroom. Ready to hand over the keys to the next owner.",
     "es": "Doris es una motorhome completamente nueva, construida sobre un Citroën Jumper H2L2 2019 y ubicada en Santiago de Chile. El proyecto se abordó como una terminación premium desde el inicio — techo machihembrado de madera natural, piso vinílico tipo porcelanato, muebles MDF con tiradores dorados, una cabina de ducha revestida en mármol con grifería 100% dorada, y un sistema eléctrico robusto basado en componentes Victron y Epever con banco de baterías LiFePO4.\n\nLa van tiene 112.000 km con historial preventivo y correctivo completo — mantenciones rigurosas cada 10.000 km en la marca Citroën — y toda la documentación al día. El permiso de circulación y SOAP están pagados hasta 2027, y se incluye GPS con seguimiento en línea activo hasta mayo 2027.\n\nDoris fue construida para ser un hogar cómodo sobre ruedas: dos bancas tapizadas en gris se convierten en cama doble con cojines terracota, una nevera Alpicool de 65L mantiene los alimentos fríos en autonomía, y un sistema de agua limpia de 130L con bomba Shurflo abastece cocina y baño. Lista para entregar las llaves al próximo dueño."

@@ -4,8 +4,9 @@ import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
 import ContactModal from "./ContactModal";
 import HeroChat from "./HeroChat";
+import { Seller } from "@/lib/seller";
 
-export default function Hero({ images }: { images: string[] }) {
+export default function Hero({ images, seller }: { images: string[]; seller?: Seller }) {
   const heroImages = images;
   const t = useTranslations("hero");
   const [modalOpen, setModalOpen] = useState(false);
@@ -87,7 +88,7 @@ export default function Hero({ images }: { images: string[] }) {
         </div>
       </div>
 
-      <ContactModal open={modalOpen} onClose={() => setModalOpen(false)} />
+      <ContactModal open={modalOpen} onClose={() => setModalOpen(false)} seller={seller} />
     </section>
   );
 }

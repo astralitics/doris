@@ -70,6 +70,13 @@ interface ChatbotConfigData {
 
 interface DorisData {
   vehicle: Record<string, unknown>;
+  seller?: {
+    name?: string;
+    whatsapp_e164?: string;
+    whatsapp_display?: string;
+    email?: string;
+    prefilled_message?: string;
+  };
   story: { en: string; es: string };
   camperization: CamperizationData;
   electrical_12v: SystemSection;
@@ -87,6 +94,7 @@ interface DorisData {
 
 const TABS = [
   "Vehicle",
+  "Seller",
   "Story",
   "Camperization",
   "12V Electrical",
@@ -319,6 +327,128 @@ function VehicleForm({
           + Add Field
         </button>
       </div>
+    </div>
+  );
+}
+
+interface SellerData {
+  name?: string;
+  whatsapp_e164?: string;
+  whatsapp_display?: string;
+  email?: string;
+  prefilled_message?: string;
+}
+
+function SellerForm({
+  data,
+  onChange,
+}: {
+  data: SellerData;
+  onChange: (d: SellerData) => void;
+}) {
+  const digits = (data.whatsapp_e164 ?? "").replace(/\D/g, "");
+  const previewUrl = digits
+    ? `https://wa.me/${digits}${
+        data.prefilled_message?.trim()
+          ? `?text=${encodeURIComponent(data.prefilled_message.trim())}`
+          : ""
+      }`
+    : null;
+
+  const set = (k: keyof SellerData, v: string) => onChange({ ...data, [k]: v });
+
+  return (
+    <div className="space-y-4">
+      <p className="text-sm text-ocean-600">
+        Contact details shown in the Hero &quot;Contact Seller&quot; modal and the
+        Contact section. Leave any field empty to hide that option on the public
+        site.
+      </p>
+
+      <label className="block">
+        <span className="mb-1 block text-xs font-medium text-ocean-600 uppercase tracking-wide">
+          Seller Name
+        </span>
+        <input
+          className={inputClass}
+          value={data.name ?? ""}
+          onChange={(e) => set("name", e.target.value)}
+          placeholder="e.g. Adrian Bazbaz"
+        />
+      </label>
+
+      <label className="block">
+        <span className="mb-1 block text-xs font-medium text-ocean-600 uppercase tracking-wide">
+          WhatsApp Number (E.164, digits only)
+        </span>
+        <input
+          className={inputClass}
+          value={data.whatsapp_e164 ?? ""}
+          onChange={(e) => set("whatsapp_e164", e.target.value)}
+          placeholder="e.g. 56912345678 (country code + number, no + or spaces)"
+        />
+        <span className="mt-1 block text-xs text-ocean-500">
+          Include the country code. &quot;+56 9 1234 5678&quot; becomes
+          &quot;56912345678&quot;.
+        </span>
+      </label>
+
+      <label className="block">
+        <span className="mb-1 block text-xs font-medium text-ocean-600 uppercase tracking-wide">
+          WhatsApp Display (optional, shown under the button)
+        </span>
+        <input
+          className={inputClass}
+          value={data.whatsapp_display ?? ""}
+          onChange={(e) => set("whatsapp_display", e.target.value)}
+          placeholder="e.g. +56 9 1234 5678"
+        />
+      </label>
+
+      <label className="block">
+        <span className="mb-1 block text-xs font-medium text-ocean-600 uppercase tracking-wide">
+          Email
+        </span>
+        <input
+          type="email"
+          className={inputClass}
+          value={data.email ?? ""}
+          onChange={(e) => set("email", e.target.value)}
+          placeholder="e.g. seller@example.com"
+        />
+      </label>
+
+      <label className="block">
+        <span className="mb-1 block text-xs font-medium text-ocean-600 uppercase tracking-wide">
+          WhatsApp Prefilled Message
+        </span>
+        <textarea
+          className={inputClass + " h-20 resize-y"}
+          value={data.prefilled_message ?? ""}
+          onChange={(e) => set("prefilled_message", e.target.value)}
+          placeholder="e.g. Hi, I'm interested in Doris!"
+        />
+        <span className="mt-1 block text-xs text-ocean-500">
+          This text is pre-filled in the buyer&apos;s WhatsApp when they tap the
+          button.
+        </span>
+      </label>
+
+      {previewUrl && (
+        <div className="rounded-lg border border-ocean-100 bg-ocean-50/50 p-3">
+          <div className="text-xs font-medium text-ocean-600 uppercase tracking-wide mb-1">
+            WhatsApp link preview
+          </div>
+          <a
+            href={previewUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-ocean-700 underline break-all"
+          >
+            {previewUrl}
+          </a>
+        </div>
+      )}
     </div>
   );
 }
@@ -1360,6 +1490,13 @@ export default function AdminPage() {
           <VehicleForm
             data={data.vehicle}
             onChange={(v) => setData({ ...data, vehicle: v })}
+          />
+        );
+      case "Seller":
+        return (
+          <SellerForm
+            data={data.seller ?? {}}
+            onChange={(s) => setData({ ...data, seller: s })}
           />
         );
       case "Story":

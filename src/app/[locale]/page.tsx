@@ -20,12 +20,12 @@ export default async function Home() {
     <>
       <Navbar />
       <main>
-        <Hero images={heroImages} />
+        <Hero images={heroImages} seller={vehicleData.seller} />
         <Gallery images={galleryImages} />
         <AtAGlance vehicleData={vehicleData} />
         <SystemsDocs vehicleData={vehicleData} />
         <Story vehicleData={vehicleData} />
-        <ContactSection />
+        <ContactSection seller={vehicleData.seller} />
       </main>
       <footer className="bg-ocean-950 text-ocean-600 text-center py-6 text-sm">
         <p>Doris — 2019 Citroën Jumper H2L2</p>
