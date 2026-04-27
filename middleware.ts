@@ -12,17 +12,22 @@ const intl = createMiddleware(routing);
  * The username is ignored (any value); only the password is checked
  * against the ADMIN_PASSWORD env var.
  *
- * If ADMIN_PASSWORD is not configured, the gate fails closed in
- * production (returns 503) and stays open in dev so localhost still works.
+ * Fails CLOSED in any non-dev environment when the password isn't set
+ * (returns 503). Only `next dev` (NODE_ENV === "development") allows
+ * through unauthenticated when the env var is missing.
  */
 function checkAdminAuth(req: NextRequest): NextResponse | null {
   const expected = process.env.ADMIN_PASSWORD;
+
   if (!expected) {
-    if (process.env.VERCEL_ENV === "production") {
-      console.error("[admin-auth] ADMIN_PASSWORD not set in production");
-      return new NextResponse("Admin access not configured", { status: 503 });
+    if (process.env.NODE_ENV === "development") {
+      return null;
     }
-    return null;
+    console.error("[admin-auth] ADMIN_PASSWORD not configured at runtime");
+    return new NextResponse("Admin access not configured", {
+      status: 503,
+      headers: { "x-admin-auth": "no-env-var" },
+    });
   }
 
   const auth = req.headers.get("authorization");
@@ -41,6 +46,7 @@ function checkAdminAuth(req: NextRequest): NextResponse | null {
     status: 401,
     headers: {
       "WWW-Authenticate": 'Basic realm="Doris Admin", charset="UTF-8"',
+      "x-admin-auth": "challenge",
     },
   });
 }
@@ -58,7 +64,11 @@ export default function middleware(req: NextRequest) {
   if (isAdminPath) {
     const blocked = checkAdminAuth(req);
     if (blocked) return blocked;
-    return NextResponse.next();
+    // Authenticated — pass through and tag the response so we can see
+    // that the middleware actually ran in production.
+    const ok = NextResponse.next();
+    ok.headers.set("x-admin-auth", "ok");
+    return ok;
   }
 
   // Non-admin API routes don't need locale routing
