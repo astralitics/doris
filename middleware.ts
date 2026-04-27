@@ -12,17 +12,14 @@ const intl = createMiddleware(routing);
  * The username is ignored (any value); only the password is checked
  * against the ADMIN_PASSWORD env var.
  *
- * Fails CLOSED in any non-dev environment when the password isn't set
- * (returns 503). Only `next dev` (NODE_ENV === "development") allows
- * through unauthenticated when the env var is missing.
+ * Fail closed: if ADMIN_PASSWORD is not set, return 503. Local dev needs
+ * to set it in .env.local. No NODE_ENV/VERCEL_ENV escape hatches — they
+ * have proven unreliable across deploy pipelines.
  */
 function checkAdminAuth(req: NextRequest): NextResponse | null {
   const expected = process.env.ADMIN_PASSWORD;
 
   if (!expected) {
-    if (process.env.NODE_ENV === "development") {
-      return null;
-    }
     console.error("[admin-auth] ADMIN_PASSWORD not configured at runtime");
     return new NextResponse("Admin access not configured", {
       status: 503,
@@ -64,8 +61,6 @@ export default function middleware(req: NextRequest) {
   if (isAdminPath) {
     const blocked = checkAdminAuth(req);
     if (blocked) return blocked;
-    // Authenticated — pass through and tag the response so we can see
-    // that the middleware actually ran in production.
     const ok = NextResponse.next();
     ok.headers.set("x-admin-auth", "ok");
     return ok;
@@ -84,9 +79,19 @@ export default function middleware(req: NextRequest) {
 }
 
 export const config = {
-  // Match everything except static assets. The function decides whether
-  // to apply auth, i18n, or pass through.
+  // Explicit matchers per route family. Previous single big-regex matcher
+  // intermittently failed to invoke middleware on /admin and /api/admin
+  // on Vercel. Multiple explicit matchers are more robust.
   matcher: [
-    "/((?!_next/static|_next/image|favicon\\.ico|.*\\.(?:png|jpg|jpeg|webp|svg|ico|woff2?|css|js|map)).*)",
+    "/admin",
+    "/admin/:path*",
+    "/api/admin",
+    "/api/admin/:path*",
+    "/api/audit",
+    "/api/audit/:path*",
+    "/api/seed",
+    "/api/seed/:path*",
+    // Public locale routing — everything except api, _next, _vercel, and files
+    "/((?!api|_next|_vercel|.*\\..*).*)",
   ],
 };
