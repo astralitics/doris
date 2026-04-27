@@ -52,7 +52,8 @@ export default function middleware(req: NextRequest) {
     pathname === "/admin" ||
     pathname.startsWith("/admin/") ||
     pathname.startsWith("/api/admin") ||
-    pathname.startsWith("/api/audit");
+    pathname.startsWith("/api/audit") ||
+    pathname.startsWith("/api/seed");
 
   if (isAdminPath) {
     const blocked = checkAdminAuth(req);
