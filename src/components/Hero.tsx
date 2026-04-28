@@ -1,14 +1,39 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useState, useEffect } from "react";
 import ContactModal from "./ContactModal";
 import HeroChat from "./HeroChat";
 import { Seller } from "@/lib/seller";
 
-export default function Hero({ images, seller }: { images: string[]; seller?: Seller }) {
+interface HeroPrice {
+  amount?: number;
+  currency?: string;
+}
+
+function formatPrice(price: HeroPrice | undefined, locale: string): string | null {
+  if (!price?.amount || !price.currency) return null;
+  // Spanish: $19.800.000 ; English: $19,800,000
+  const localeTag = locale === "es" ? "es-CL" : "en-US";
+  const formatted = price.amount.toLocaleString(localeTag);
+  return `${price.currency} $${formatted}`;
+}
+
+export default function Hero({
+  images,
+  seller,
+  price,
+  tagline,
+}: {
+  images: string[];
+  seller?: Seller;
+  price?: HeroPrice;
+  tagline?: string;
+}) {
   const heroImages = images;
   const t = useTranslations("hero");
+  const locale = useLocale();
+  const formattedPrice = formatPrice(price, locale);
   const [modalOpen, setModalOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
   const [showPrice, setShowPrice] = useState(false);
@@ -41,20 +66,20 @@ export default function Hero({ images, seller }: { images: string[]; seller?: Se
           Doris
         </h1>
         <p className="text-lg md:text-xl text-ocean-200 mb-2">
-          {t("tagline")}
+          {tagline ?? t("tagline")}
         </p>
-        {showPrice ? (
+        {showPrice && formattedPrice ? (
           <p className="text-3xl md:text-4xl font-heading font-bold text-amber-400 mb-6 animate-fade-in">
-            {t("price")}
+            {formattedPrice}
           </p>
-        ) : (
+        ) : formattedPrice ? (
           <button
             onClick={() => setShowPrice(true)}
             className="mb-6 px-5 py-2 text-sm font-medium text-amber-400 border border-amber-400/40 rounded-full hover:bg-amber-400/10 transition-colors"
           >
             {t("see_price")}
           </button>
-        )}
+        ) : null}
 
         {/* Prominent AI Chatbot */}
         <HeroChat />

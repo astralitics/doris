@@ -20,7 +20,11 @@ export default async function Home() {
     <>
       <Navbar />
       <main>
-        <Hero images={heroImages} seller={vehicleData.seller} />
+        <Hero
+          images={heroImages}
+          seller={vehicleData.seller}
+          price={vehicleData.vehicle?.price}
+        />
         <Gallery images={galleryImages} />
         <AtAGlance vehicleData={vehicleData} />
         <SystemsDocs vehicleData={vehicleData} />
