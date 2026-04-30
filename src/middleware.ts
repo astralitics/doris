@@ -21,8 +21,6 @@ export const config = {
   matcher: [
     "/admin/:path*",
     "/api/admin/:path*",
-    "/api/audit/:path*",
-    "/api/seed/:path*",
     "/((?!api|_next|_vercel|.*\\..*).*)",
   ],
 };
@@ -36,10 +34,7 @@ export default async function middleware(req: NextRequest) {
   }
 
   const isAdminPage = pathname === "/admin" || pathname.startsWith("/admin/");
-  const isAdminApi =
-    pathname.startsWith("/api/admin") ||
-    pathname.startsWith("/api/audit") ||
-    pathname.startsWith("/api/seed");
+  const isAdminApi = pathname.startsWith("/api/admin");
 
   if (isAdminPage || isAdminApi) {
     const cookie = req.cookies.get(AUTH_COOKIE)?.value;
