@@ -34,8 +34,8 @@ async function readFromFile(): Promise<any> {
  * etc.), we serve the bundled data/doris.json. Better to show slightly
  * stale content than a 500.
  */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const getVehicleData = unstable_cache(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async (): Promise<any> => {
     if (!isKvEnabled()) {
       return readFromFile();
